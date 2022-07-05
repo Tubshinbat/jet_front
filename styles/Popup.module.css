@@ -1,0 +1,94 @@
+.BlackBg{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:3;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(0, 0, 0, 0.438);
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    touch-action: cross-slide-y pinch-zoom double-tap-zoom;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    }
+    
+    .DisplayFlex{
+      display: flex;
+    }
+
+    .CloseIcon {
+        position: absolute;
+        right: 60px;
+        height: 24px;
+        z-index: 6;
+        font-size: 24px;
+        color: rgb(126, 126, 126);
+        cursor: pointer;
+      }
+      
+      .Window .WindowImg {
+        display: flex;
+        float: left;
+        width: 150px;
+      }
+
+      .Window {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: justify;
+        z-index: 5;
+        padding: 40px;
+        width: 70vw;
+        height: 70vh;
+        background: #fff;
+        overflow: hidden;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
+        transition: opacity 0.3s linear, transform 0.3s ease-out;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+      }
+
+      .Window img{
+        width: 100%;
+
+      }
+      
+      .DisplayOff {
+        display: none;
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
+        transition: opacity 0.3s linear, transform 0.3s ease-out;
+      }
+      
+      .DisplayOn {
+        display: block;
+        opacity: 1;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
+        transition: opacity 0.3s linear, transform 0.3s ease-out;
+      }
+
+      .Image {
+        width: 100%;
+        position: relative !important;
+        height: unset !important;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        cursor: pointer;
+      }

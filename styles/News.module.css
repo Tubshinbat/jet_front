@@ -1,0 +1,134 @@
+.Page {
+  padding: 50px 0px;
+}
+
+.NewsList__item {
+  position: relative;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ddd;
+}
+
+.NewsList__item:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #15794d;
+}
+
+.NewsList__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.4s;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.NewsList__name:hover {
+  color: #15794d;
+}
+
+.NewsList__shortInfo {
+  font-size: 0.85rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.NewsList__imgBox {
+  display: flex;
+  height: 240px;
+  flex: 0 0 40%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.NewsList__imgBox > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.NewsList__imgBox > img:hover {
+  transform: scale(1.1);
+}
+
+.NewsList__detials {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewsList__categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.NewsList__categories_item {
+  text-decoration: none;
+  color: #fff;
+  background: #15794d;
+  font-size: 0.55rem;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.NewsList__categories_item:hover {
+  color: #fff;
+}
+
+.NewsList__info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+}
+
+.NewsList__info i {
+  color: #15794d;
+  margin-right: 5px;
+}
+
+.NewsList__info div {
+  margin-right: 10px;
+}
+
+select.SelectNews {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: #f5f5f5;
+  border-radius: 2px;
+  padding: 10px 20px;
+  font-size: 0.75rem;
+  border: 1px solid #e4e4e4;
+}
+
+.SelectNews option {
+  display: flex;
+  position: relative;
+  padding: 8px 20px;
+}
+
+@media (max-width: 768px) {
+  .NewsList__item {
+    flex-direction: column;
+  }
+  .NewsList__imgBox {
+    height: auto;
+  }
+  .NewsList__imgBox > img {
+    width: auto;
+  }
+}

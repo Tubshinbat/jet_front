@@ -1,0 +1,64 @@
+.swiper.bookSlider {
+  position: relative;
+  width: 100%;
+  margin-top: 35px !important;
+}
+
+.bookSlider .swiper-slide a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  text-decoration: none;
+}
+
+.bookSlider .swiper-slide a img {
+  display: block;
+  width: 200px;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+.bookSlider .swiper-slide a:hover img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 5px 15px 15px 10px;
+  opacity: 0.8;
+}
+
+.bookSlider a .book_slider__text {
+  display: block;
+  background-color: #fff;
+  height: 90%;
+  padding: 40px;
+  transition: all 0.3s;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #000;
+}
+
+.bookSlider a .book_slider__text:hover h5 {
+  color: #15794d;
+}
+
+.book_slider__text h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.book_slider__text p {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 479px) {
+  .bookSlider .swiper-slide a {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}

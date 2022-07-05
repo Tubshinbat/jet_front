@@ -1,0 +1,19 @@
+.newsViewSlider {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.newsViewSlide {
+  width: 100%;
+}
+.newsViewSlide img {
+  width: 100%;
+}
+
+.newsViewSlider__prev::after,
+.newsViewSlider__next::after {
+  font-size: 14px !important;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 2px;
+  background-color: #15794d;
+}

@@ -1,0 +1,141 @@
+.Footer {
+  background-color: #15794d;
+  padding: 45px 0px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top;
+
+  color: #fff;
+}
+
+.Footer__Title {
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0c4d31;
+  margin-bottom: 15px;
+  width: auto;
+  font-size: 0.9rem;
+}
+
+.Footer__Links {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.Footer__Links a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 0px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.Footer__Links a:hover {
+  padding-left: 15px;
+}
+
+.Footer__logo {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Footer__logo > img {
+  width: 60%;
+}
+
+.Footer__contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Footer__contact_box {
+  display: flex;
+  width: 100%;
+  background-color: #0c4d31;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.Footer__contact_box i {
+  margin-right: 10px;
+  font-size: 0.75rem;
+}
+
+.Footer__contact_box:hover {
+  cursor: pointer;
+  background-color: rgb(32, 30, 30);
+}
+
+.Footer__socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.Footer__socials a {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+.Footer__socials a:hover {
+  color: rgb(207, 207, 207);
+}
+
+.Footer__end {
+  display: flex;
+  font-family: "DinPro", sans-serif;
+  justify-content: center;
+  background-color: #0c4d31;
+  padding: 10px 0px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.Footer__logo_m {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .Footer__logo_m {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+  }
+  .Footer__logo {
+    display: none;
+  }
+  .Footer__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 50%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 517px) {
+  .Footer__boxs {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+  }
+  .Footer__box {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
