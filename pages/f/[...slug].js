@@ -1,6 +1,7 @@
 import Footer from "components/footer";
 import Partners from "components/footer-partners";
-import HomeHeader from "components/home-header";
+import HomeHeader from "components/header";
+
 import PageHeader from "components/page-header";
 import { getFooterMenu, getMenu } from "lib/menus";
 import Head from "next/head";
